@@ -1,0 +1,41 @@
+
+@date-picker-highlight: #2196F3;
+
+.datepicker {
+    font-size: 1.4em;
+    line-height: 1em;
+    font-family: @font-monospace;
+    display: inline-block;
+    position: relative;
+    
+    .unit {
+        position: relative;
+        box-sizing: content-box;
+        margin-left: .15em;
+        display: inline-block;
+        height: 1em;
+        // min-width: 2em;
+        padding: .25em;
+        border: solid 1px transparent;
+        border-radius: 3px;
+        
+        &[data-divider]:not(:first-child):before {
+            content: attr(data-divider);
+            position: absolute;
+            left: -.45em;
+        }
+    }
+    
+    .unit.active {
+        border-color: @date-picker-highlight;
+    }
+    
+    &.unsaved:after {
+        content: '*';
+    	color: red;
+    	position: absolute;
+    	font-size: .7em;
+    	right: 0;
+    }
+    
+}

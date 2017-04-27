@@ -1,0 +1,21 @@
+{
+  "name": "backbone-date-picker",
+  "version": "0.1.0",
+  "description": "An inline date picker based on Backbone.js and Moment.js",
+  "main": "Gruntfile.js",
+  "keywords": [
+    "Backbone.js",
+    "Backbone",
+    "Date Picker",
+    "Date Selctor",
+    "Date Scroller"
+  ],
+  "author": "Kevin Jantzer <kevin.jantzer@blackstoneaudio.com>",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "jit-grunt": "~0.7.0"
+  }
+}

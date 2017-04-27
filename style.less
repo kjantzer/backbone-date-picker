@@ -1,0 +1,43 @@
+/*
+        Demo styles
+*/
+@import "lib/demo-base.less";
+@import "lib/elements.less";
+@import "src/date-picker.less";
+
+@font-monospace: 'Source Code Pro', monospace;
+@date-picker-highlight: #FF3D00;
+
+@color: #FF8A65;
+@color-highlight: #FF3D00;
+
+header > article {
+	text-align: center;
+	
+	#top-demo {
+		display: inline-block;
+		padding: .25em .5em;
+		background: #FFAB91;
+		border-radius: 4px;
+		color: @color-highlight;
+		font-size: 1.4em;
+	}
+	
+	.note {
+		font-size: .8em;
+		font-style: italic;
+		margin-top: 1em;
+	}
+}
+
+.demo {
+	display: flex;
+	
+	> div:first-child {
+		flex-basis: 300px;
+	}
+	
+	> pre {
+		flex-grow: 1;
+	}
+}
